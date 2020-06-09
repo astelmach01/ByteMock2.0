@@ -13,7 +13,7 @@ class Header extends React.Component{
     render(){
 
         return (
-            <div>
+            <div className="logo">
                 <a href="https://www.bytemock.com/#/home">
                     <img src= {logo} alt={"Failed to load"}/>
                 </a>

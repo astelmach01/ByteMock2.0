@@ -5,7 +5,12 @@ class MainContent extends React.Component{
         super(props);
     }
     render() {
-        return <h1>MainContent</h1>
+        return (
+            <div>
+                Main Content
+            </div>
+
+        )
     }
 }
 

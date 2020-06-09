@@ -5,15 +5,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
 
 .container {
   display: inline-block;
+  padding: 20px;
   cursor: pointer;
   float: right;
 }
@@ -41,4 +71,18 @@ code {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.MainContent{
+  float: right;
+}
+.Footer{
+  float: left;
+}
+
+.logo{
+  background-color: #00ffff;
+}
+
+.dropdown{
+  float: right;
 }
