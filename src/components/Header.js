@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../BYTEMOCK_LOGO.png"
+
 class Header extends React.Component{
     constructor(props) {
         super (props)
@@ -14,6 +14,15 @@ class Header extends React.Component{
         return (
             <div className="Header">
 
+                <div id="navmenu">
+                    <ul>
+                        <li><a href="https://www.google.com/">home</a></li>
+                        <li><a href="https://www.google.com/">services</a></li>
+                        <li><a href="https://www.google.com/">posts</a></li>
+                        <li><a href="https://www.google.com/">categories</a></li>
+                        <li><a href="https://www.google.com/">about</a></li>
+                    </ul>
+                </div>
             </div>
 
         )}

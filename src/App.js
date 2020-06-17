@@ -1,17 +1,20 @@
 import React from 'react';
-import Logo from "./components/logo";
-import MainContent from './components/MainContent'
-import Footer from "./components/Footer";
+import './App.css';
+import Logo from "./components/Logo"
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
 
 
 function App() {
-  return (
-    <div className="App">
-        <Logo/>
-        <MainContent/>
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Logo/>
+            <Header/>
+            <MainContent/>
+
+        </div>
+    );
 }
 
 export default App;
+

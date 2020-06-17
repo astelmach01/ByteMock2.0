@@ -1,13 +1,25 @@
 import React from "react"
 
 class MainContent extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+
     render() {
         return (
             <div>
-                Main Content
+                <section>
+                    <div className="slide">
+                        <div className="content1">
+
+
+                        </div>
+
+                    </div>
+                    <div className="slide">
+                        <div className="content2">
+
+                        </div>
+
+                    </div>
+                </section>
             </div>
 
         )

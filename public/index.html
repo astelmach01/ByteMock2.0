@@ -1,95 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#000000"/>
+  <meta
+          name="description"
+          content="Web site created using create-react-app"
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
 
-    <title>React App</title>
-  </head>
+  <title>React App</title>
+</head>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="container" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
 
-    <script>
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
-    </script>
-    <div class="dropdown">
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <div id="root"></div>
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+</script>
 
-    <div>
-      <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-      <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-      <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-      <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<div id="root"></div>
 
-      <div id="Home" class="tabcontent">
-        <h3>Home</h3>
-        <p>Home is where the heart is..</p>
-      </div>
 
-      <div id="News" class="tabcontent">
-        <h3>News</h3>
-        <p>Some news this fine day!</p>
-      </div>
-
-      <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Get in touch, or swing by for a cup of coffee.</p>
-      </div>
-
-      <div id="About" class="tabcontent">
-        <h3>About</h3>
-        <p>Who we are and what we do.</p>
-      </div>
-
-      <script>
-        function openPage(pageName, elmnt, color) {
-          // Hide all elements with class="tabcontent" by default */
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-
-          // Remove the background color of all tablinks/buttons
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-
-          // Show the specific tab content
-          document.getElementById(pageName).style.display = "block";
-
-          // Add the specific color to the button used to open the tab content
-          elmnt.style.backgroundColor = color;
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-      </script>
-    </div>
-
-  </body>
+</body>
 </html>
