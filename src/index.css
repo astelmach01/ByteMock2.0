@@ -141,21 +141,22 @@ section {
 }
 
 .slide:hover {
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .slide {
     background-color: white;
 }
-
 .content1 {
     background-image: url(insidepost_coding.jpg);
     background-position: center center;
     height: 100%;
 }
 
+
 .content2 {
     background-image: url(Fotolia_169539793_Subscription_Monthly_M-1200x840.jpg);
     background-position: center center;
     height: 100%;
 }
+

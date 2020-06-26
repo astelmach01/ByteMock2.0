@@ -4,7 +4,7 @@ class MainContent extends React.Component{
 
     render() {
         return (
-            <div>
+            <div className="wrapper">
                 <section>
                     <div className="slide">
                         <div className="content1">

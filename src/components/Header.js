@@ -15,6 +15,7 @@ class Header extends React.Component{
             <div className="Header">
 
                 <div id="navmenu">
+
                     <ul>
                         <li><a href="https://www.google.com/">home</a></li>
                         <li><a href="https://www.google.com/">services</a></li>
@@ -23,6 +24,7 @@ class Header extends React.Component{
                         <li><a href="https://www.google.com/">about</a></li>
                     </ul>
                 </div>
+               
             </div>
 
         )}
