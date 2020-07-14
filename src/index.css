@@ -1,13 +1,195 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, * {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    padding-right: 50px;
+    padding-top: 50px;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: whitesmoke;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropdown {
+    float: right;
+}
+
+.navbar {
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 100px;
+}
+
+ul {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+
+    list-style-type: none;
+    justify-content: center;
+}
+
+ul li {
+    padding: 6px;
+
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    padding: 4px 0;
+    transition: 0.5s;
+
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: whitesmoke;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+ul li a:hover {
+    color: #95a5a6;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.logo {
+    float: left;
+    max-width: 250px;
+    max-height: 90px;
+}
+
+.Header {
+    position: relative;
+    display: flex;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 50px;
+    max-height: 90px;
+    justify-content: center;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 2px solid #000;
+}
+
+.slide {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    border: 2px solid #000;
+    overflow: hidden;
+    transition: 0.35s ease-in-out;
+}
+
+.slide:hover {
+    flex-grow: 3;
+}
+
+.slide {
+    background-color: white;
+}
+.content1 {
+    background-image: url(insidepost_coding.jpg);
+    background-position: center center;
+    height: 100%;
+}
+
+
+.content2 {
+    background-image: url(Fotolia_169539793_Subscription_Monthly_M-1200x840.jpg);
+    background-position: center center;
+    height: 100%;
+}
+
+.leftside {
+    position: relative;
+    top: 350px;
+    padding: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    color: black;
+
+
+}
+
+.leftside:hover {
+    cursor: pointer;
+
+}
+
+.rightside {
+    position: relative;
+    top: 350px;
+    padding: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    color: black;
+
+}
+
+.rightside:hover {
+    cursor: pointer;
+}
+
