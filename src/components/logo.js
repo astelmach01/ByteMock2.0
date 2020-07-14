@@ -1,23 +1,14 @@
 import React from 'react'
-import logo from "../BYTEMOCK_LOGO.png"
+import logo from "../BYTEMOCK_LOGO.png";
 
-class Header extends React.Component {
-
+class Logo extends React.Component {
 
     render() {
-
-
-        return (
-            <div className="logo">
-                <a href="https://www.bytemock.com/#/home">
-                    <img src={logo} width={"250px"} alt={"Failed to load"}/>
-                </a>
-            </div>
-
-        )
-    }
-
-
+        return(
+        <div className="Logo">
+            <img src={logo} width="250px" alt="could not load"/>
+        </div>
+        )}
 }
 
-export default Header
+export default Logo

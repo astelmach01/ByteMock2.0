@@ -121,10 +121,9 @@ ul li a:hover::after {
     margin-left: 300px;
     padding-top: 50px;
     max-height: 90px;
-<<<<<<< HEAD
+
     justify-content: center;
-=======
->>>>>>> ff667e77c7d38264e598820da1d9c2211f8407c6
+
 }
 
 section {
@@ -164,7 +163,7 @@ section {
     height: 100%;
 }
 
-<<<<<<< HEAD
+
 .leftside {
     position: relative;
     top: 350px;
@@ -196,6 +195,3 @@ section {
 .rightside:hover {
     cursor: pointer;
 }
-
-=======
->>>>>>> ff667e77c7d38264e598820da1d9c2211f8407c6
