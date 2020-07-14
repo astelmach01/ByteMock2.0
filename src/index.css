@@ -23,7 +23,6 @@ body {
     float: right;
     padding-right: 50px;
     padding-top: 50px;
-
 }
 
 .bar1, .bar2, .bar3 {
@@ -112,16 +111,12 @@ ul li a:hover::after {
     float: left;
     max-width: 250px;
     max-height: 90px;
+
 }
 
 .Header {
     position: relative;
     display: flex;
-    margin-right: 300px;
-    margin-left: 300px;
-    padding-top: 50px;
-    max-height: 90px;
-
     justify-content: center;
 
 }
@@ -132,9 +127,11 @@ section {
     height: 100%;
     display: flex;
     border: 2px solid #000;
+
 }
 
 .slide {
+
     position: relative;
     height: 100%;
     flex: 1;
@@ -146,14 +143,11 @@ section {
 .slide:hover {
     flex-grow: 3;
 }
-
-.slide {
-    background-color: white;
-}
 .content1 {
     background-image: url(insidepost_coding.jpg);
     background-position: center center;
     height: 100%;
+    float: left;
 }
 
 
@@ -161,6 +155,7 @@ section {
     background-image: url(Fotolia_169539793_Subscription_Monthly_M-1200x840.jpg);
     background-position: center center;
     height: 100%;
+    float: right;
 }
 
 
